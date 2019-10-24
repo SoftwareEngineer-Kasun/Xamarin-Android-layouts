@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android" 
+   android:layout_width = "match_parent" 
+   android:layout_height = "match_parent" 
+   // give a pading boder
+   android:paddingLeft = "16dp" 
+   android:background = "#d3d3d3" 
+   // give a pading boder
+   android:paddingRight = "16dp"> 
+   
+  // parent
+  <EditText>android:id = "@+id/name" <EditText/>
+  //child
+  <EditText>android:id = "@+id/child" 
+  //inherit the parent
+  android:layout_below = "@id/name"
+  // set position right of parent
+  android:layout_alignParentRight = "true"
+  <EditText/>
+   
+   //tell a size to object
+   android:layout_width = "85dp" 
+   // tell to ignore size but deside by another element
+   android:layout_width = "0dp" 
+   
+   
+   </RelativeLayout> 
+   
+   // you can multiple alighn to get sevaral position at ones
+   android:layout_centerInParent="true"
+    android:layout_alignParentRight = "true"
+    
+    // other commands
+    android:layout_above="@id/second"
+     android:layout_toLeftOf="@id/second"
+      android:layout_toRightOf="@id/second"
+    android:layout_alignParentTop = "true"
+    android:layout_alignParentBottom = "true"
